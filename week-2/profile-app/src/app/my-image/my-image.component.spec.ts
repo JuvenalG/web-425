@@ -1,3 +1,12 @@
+/**
+ * Title:
+ * Author: Professor Krasso
+ * Date: 11 January 2021
+ * Modified By: Juvenal Gonzalez
+ * Description: testing for my-image component
+ */
+
+
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MyImageComponent } from './my-image.component';

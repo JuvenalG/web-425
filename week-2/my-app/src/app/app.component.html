@@ -1,7 +1,16 @@
+<!--
+ * Title: app.component.html
+ * Author: Professor Krasso
+ * Date: 11 January 2021
+ * Modified By: Juvenal Gonzalez
+ * Description: hyperlink text markup for main html component
+ -->
+
+
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
   <ul class="navbar-nav" >
-
+<!--navbar to navigate page-->
       <li class="nav-item active">
           <a class="nav-link" routerLink="/home">Home</a>
       </li>
@@ -24,6 +33,7 @@
   <div class="row">
     <div class="col-sm-12">
         <div class="alert alert-success" role="alert">
+          <!--router-outlet used to pass links of all routes throughout page-->
           <router-outlet></router-outlet>
         </div>
     </div>

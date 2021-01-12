@@ -1,3 +1,12 @@
+/**
+ * Title: composer.list.component.spec.ts
+ * Author: Professor Krasso
+ * Date: 11 January 2021
+ * Modified By: Juvenal Gonzalez
+ * Description: testing for composer-list
+ */
+
+
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ComposerListComponent } from './composer-list.component';

@@ -1,7 +1,7 @@
 /**
  * Title: app-routing.module.ts
  * Author: Professor Krasso
- * Date: 21 April 2020
+ * Date: 11 January 2021
  * Modified By: Juvenal Gonzalez
  * Description: Routing paths passing ROUTES as an array containing route links
  */

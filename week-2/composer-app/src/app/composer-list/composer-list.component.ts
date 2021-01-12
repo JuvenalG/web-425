@@ -4,11 +4,11 @@
  * Author: Professor Krasso
  * Date: 01 January 2021
  * Modified By: Juvenal Gonzalez
- * Description: Composer list component; displays a list of composers
+ * Description: composer-list main component, displays all composers in the class
  */
 
 import { Component, OnInit } from '@angular/core';
-
+//exports default class to carry the list
 export default class Composer {
   fullName: string;
   genre: string;
@@ -23,7 +23,7 @@ export default class Composer {
   selector: 'app-composer-list',
   templateUrl: './composer-list.component.html',
   styleUrls: ['./composer-list.component.css']
-})
+})  //exports the class using OnInIT to hook the lifecyle
 export class ComposerListComponent implements OnInit {
 
   composers: Array<Composer>;

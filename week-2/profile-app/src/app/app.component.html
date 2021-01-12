@@ -32,7 +32,7 @@
  <div class="container">
      <!--variable from component.ts-->
     <h2>{{assignment}}</h2>
-
+<!--if statement for isLoggedIn-->
   <div class="row align-items-center" *ngIf="isLoggedIn; else showError">
 
       <div class="col-12-sm pt-4">
@@ -49,7 +49,7 @@
       </div>
 
   </div>
-
+<!--displays if isLoggedIn is false-->
   <ng-template #showError>
     <div class="row">
         <div class="col-sm-12">
