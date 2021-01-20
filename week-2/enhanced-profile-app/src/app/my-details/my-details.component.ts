@@ -20,7 +20,7 @@ export default class Person {
   constructor(fullName: string, favoriteFood: string, favoriteColor: string) {
       this.fullName = fullName;
       this.favoriteFood = favoriteFood;
-      this.favoriteColor = favoriteFood;
+      this.favoriteColor = favoriteColor;
     }
 
     toString(){

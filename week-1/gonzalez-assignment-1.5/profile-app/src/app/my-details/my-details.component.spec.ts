@@ -1,3 +1,12 @@
+/**
+ * Title: my-details.component.spec.ts
+ * Author: Professor Krasso
+ * Date: 11 January 2021
+ * Modified By: Juvenal Gonzalez
+ * Description: testing for my-details components
+ */
+
+
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MyDetailsComponent } from './my-details.component';
