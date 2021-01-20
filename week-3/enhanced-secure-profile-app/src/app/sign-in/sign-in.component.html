@@ -1,8 +1,18 @@
+<!--
+============================================
+; Title:  sign-in.component.html
+; Author: Richard Krasso
+; Date:   December 20 2020
+; Modified By: Juvenal Gonzalez
+; Description: HTML used to markup sign-in component
+;===========================================
+-->
+
 <div class="card signIn-container">
 
   <div class="card-body">
       <h3 class="card-title">Sign In</h3>
-
+      <!--Form used for sign-in-->
       <form class="card-text">
 
           <div class="form-group">
@@ -16,7 +26,7 @@
 
         </div>
 
-        <div class="form-group">
+        <div class="form-group">                        <!--Click event from main sign-in component.ts -->
             <button class="btn btn-primary float-right"  (click)="signIn()" >Submit</button>
         </div>
 

@@ -12,7 +12,7 @@ import { ComposerListComponent } from './composer-list/composer-list.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import {ComposerDetailsComponent } from "./composer-details/composer-details.component";
-
+//Routes defines each path in an array
 const routes: Routes = [
   {
     path: '',
@@ -37,7 +37,7 @@ const routes: Routes = [
   }
 ];
 
-@NgModule({
+@NgModule({ //links the routes array to the router module then exports
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })

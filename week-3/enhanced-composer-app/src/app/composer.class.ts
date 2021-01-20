@@ -1,3 +1,12 @@
+/**
+ * Title: composer.class.ts
+ * Author: Professor Krasso
+ * Date: 19 January 2021
+ * Modified By: Juvenal Gonzalez
+ * Description: defines values in composer array implenting the IComposer interface
+ */
+
+
 import {IComposer} from "./composer.interface";
 
 export class Composer {
@@ -25,7 +34,7 @@ export class Composer {
 
   ]
  }
-
+  //getter methods used with composer class
   getComposers() {
     return this.composers;
   }

@@ -1,8 +1,8 @@
 /*
 ============================================
-; Title:  Assignment 1.5
+; Title:  app.module.ts
 ; Author: Richard Krasso
-; Date:   December 20 2020
+; Date:   January 19 2020
 ; Modified By: Juvenal Gonzalez
 ; Description: Module declarations
 ;===========================================
@@ -18,7 +18,7 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutes } from "./app.routing";
 import { RouterModule } from "@angular/router";
 import { SignInComponent } from './sign-in/sign-in.component';
-//module declaration
+//module declarations of each component
 @NgModule({
   declarations: [
     AppComponent,

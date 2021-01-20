@@ -39,7 +39,7 @@ export class MyDetailsComponent implements OnInit {
    myProfile: Person;
 
   constructor() {
-     this.myProfile = new Person("Juvenal Joeseph Gonzalez", "Shrimp Burrito", "Green");
+     this.myProfile = new Person("Juvenal Joseph Gonzalez", "Shrimp Burrito", "Green");
      this.myProfile.toString();
    }
 

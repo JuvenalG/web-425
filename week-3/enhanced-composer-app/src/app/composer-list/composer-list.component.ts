@@ -21,7 +21,7 @@ import{Composer} from "../composer.class"
 export class ComposerListComponent implements OnInit {
 
   composers: Array<IComposer>;
-
+   //defines how composer is initialized and passed
   constructor() {
     this.composers = new Composer().getComposers();
   }

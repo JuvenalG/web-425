@@ -1,3 +1,11 @@
+/**
+ * Title: sign-in-guard.ts
+ * Author: Professor Krasso
+ * Date: 19 January 2021
+ * Modified By: Juvenal Gonzalez
+ * Description: route guard to be used in routing
+ */
+
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
@@ -12,7 +20,7 @@ export class SignInGuard implements CanActivate {
 
 
   }
-
+  //navigates to home page if isLoggedIn is true else returns to sign-in page
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {

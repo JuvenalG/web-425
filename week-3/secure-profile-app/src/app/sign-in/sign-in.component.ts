@@ -1,3 +1,12 @@
+/**
+ * Title: sign-in.component.ts
+ * Author: Professor Krasso
+ * Date: 19 January 2021
+ * Modified By: Juvenal Gonzalez
+ * Description: main sign-in component
+ */
+
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
 
@@ -14,7 +23,7 @@ export class SignInComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  //uses sign in to change Boolean isLoggedIn to true initating router navigation to home page
   signIn() {
      this.isLoggedIn = true;
 

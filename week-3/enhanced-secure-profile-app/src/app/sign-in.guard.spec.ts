@@ -1,3 +1,11 @@
+/**
+ * Title: sign-in.guard.spec.ts
+ * Author: Professor Krasso
+ * Date: 11 January 2021
+ * Modified By: Juvenal Gonzalez
+ * Description: testing for sign-in guard
+ */
+
 import { TestBed } from '@angular/core/testing';
 
 import { SignInGuard } from './sign-in.guard';

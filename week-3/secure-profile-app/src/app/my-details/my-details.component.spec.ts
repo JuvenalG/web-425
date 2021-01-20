@@ -1,5 +1,5 @@
 /**
- * Title: my-details.component.html
+ * Title: my-details.component.spec.ts
  * Author: Professor Krasso
  * Date: 11 January 2021
  * Modified By: Juvenal Gonzalez
