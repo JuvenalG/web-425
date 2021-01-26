@@ -1,3 +1,13 @@
+/**
+ * Title: composer.service.ts
+ * Author: Professor Krasso
+ * Date: 19 January 2021
+ * Modified By: Juvenal Gonzalez
+ * Description: defines values in composer array implenting the IComposer interface
+ * previously composer class but now is injectable removing the need for new instances
+ */
+
+
 import { Injectable } from '@angular/core';
 import { IComposer } from "./composer.interface";
 import { Observable } from "rxjs";
@@ -34,6 +44,8 @@ export class ComposerService {
   ]
  }
   //getter methods used with composer class
+
+  // Observable <IComposer> objects array passed here
   getComposers(): Observable<IComposer[]> {
     return of(this.composers);
   }
@@ -45,7 +57,7 @@ export class ComposerService {
         }
     }
   }
-
+  // Filters observable array using pipe map and filter
   filterComposers(name: string): Observable<IComposer[]> {
     return of(this.composers).pipe(
       map(composers =>

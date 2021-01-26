@@ -9,7 +9,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import {IComposer} from "../composer.interface";
-import { ComposerService } from "../composer.service";
+import { ComposerService } from "../composer.service"; //previously composer class
 
 //exports default class to carry the list
 
@@ -22,7 +22,7 @@ import { ComposerService } from "../composer.service";
 export class ComposerListComponent implements OnInit {
 
   composers: Array<IComposer>;
-   //defines how composer is initialized and passed
+   //defines how composer is initialized and passed   ; creates classes without using new  DEPENDENCY INJECTION
   constructor(private composerService: ComposerService) {
     this.composers = this.composerService.getComposers();
   }

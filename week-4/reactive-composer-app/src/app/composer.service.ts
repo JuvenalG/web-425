@@ -1,3 +1,13 @@
+/**
+ * Title: composer.service.ts
+ * Author: Professor Krasso
+ * Date: 19 January 2021
+ * Modified By: Juvenal Gonzalez
+ * Description: defines values in composer array implenting the IComposer interface
+ * previously composer class but now is injectable removing the need for new instances
+ */
+
+
 import { Injectable } from '@angular/core';
 import { IComposer } from "./composer.interface";
 

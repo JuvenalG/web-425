@@ -9,7 +9,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { IComposer } from "..//composer.interface";
-import { ComposerService } from "../composer.service";
+import { ComposerService } from "../composer.service"; //previosly composer class
 import { ActivatedRoute } from "@angular/router";
 
 @Component({
@@ -20,10 +20,11 @@ import { ActivatedRoute } from "@angular/router";
 export class ComposerDetailsComponent implements OnInit {
    //sets datatypes for composerDetails
   composerID: number;
-  composer: IComposer;
+  composer: IComposer;                          //private added for injectability
   constructor(private route: ActivatedRoute, private composerService: ComposerService){ //implements route guard
     this.composerID = parseInt(this.route.snapshot.paramMap.get("composerID"), 10);
-    if(this.composerID) { //outputs composerID for each composer
+
+    if(this.composerID) { //outputs composerID for each composer  ;this.composerService instead of new
       this.composer = this.composerService.getComposer(this.composerID);
     }
   }
