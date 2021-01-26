@@ -1,0 +1,24 @@
+<!--
+ * Title: composer-details.component.html
+ * Author: Professor Krasso
+ * Date: 11 January 2021
+ * Modified By: Juvenal Gonzalez
+ * Description: hyperlink markup for composer-list component
+ -->
+
+
+<div class ="row">
+  <div class="col-sm-12">
+         <!--Outputs the values defined in composer.class.ts to be outputed upon click of composer id-->
+      <ul class="list-group">
+          <li class="list-group-item"> Composer ID: {{ composer.composerID }}</li>
+          <li class="list-group-item"> Full name: {{composer.fullName}}</li>
+          <li class="list-group-item"> Genre: {{composer.genre }}</li>
+      </ul>
+      <br/>
+      <a routerLink="/composer-list" class="float-right">Return to Composers</a>
+
+  </div>
+
+
+</div>
