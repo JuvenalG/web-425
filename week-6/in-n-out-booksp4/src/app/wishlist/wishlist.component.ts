@@ -23,7 +23,7 @@ export class WishlistComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+   //pushes IWishListItem onto this.tiems array
   updateItemsHandler(item: IWishListItem) {
       this.items.push(item);
   }
