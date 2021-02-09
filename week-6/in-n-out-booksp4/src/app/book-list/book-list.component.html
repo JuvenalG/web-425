@@ -1,0 +1,38 @@
+<!--
+ * Title: book-list.component.html
+ * Author: Professor Krasso
+ * Date: 1 February 2021
+ * Modified By: Juvenal Gonzalez
+ * Description: hyperlink markup for book-list component
+ -->
+
+
+ <div fxLayout="column wrap">
+  <h2 fxFlex class="green">Top 5 Favorite Books</h2>
+  <!--data table from angular material passes datasource of books -->
+  <table fxFlex mat-table [dataSource]="books" class="mat-elevation-z8">
+    <!--Passes header array-->
+    <tr mat-header-row *matHeaderRowDef="header"></tr>
+    <tr mat-row *matRowDef="let row; columns: header;"></tr>
+
+    <ng-container matColumnDef="isbn">
+      <th mat-header-cell *matHeaderCellDef>ISBN</th>                    <!--Click event passes isbn number or related element in following events-->
+      <td mat-cell *matCellDef="let element"><a class="a-link blue" (click)="showBookDetails(element.isbn)"> {{ element.isbn }}</a></td>
+    </ng-container>             <!--Let element used to loop through array and output each element-->
+
+    <ng-container matColumnDef="title">
+      <th mat-header-cell *matHeaderCellDef>Title</th>
+      <td mat-cell *matCellDef="let element"> {{ element.title }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="numOfPages">
+      <th mat-header-cell *matHeaderCellDef>Number of pages</th>
+      <td mat-cell *matCellDef="let element"> {{ element.numOfPages }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="authors">
+      <th mat-header-cell *matHeaderCellDef>Authors</th>
+      <td mat-cell *matCellDef="let element"> {{ element.authors.join(', ')}}</td> <!--Join allows array display authors with a comma delimiter-->
+    </ng-container>
+  </table>
+</div>

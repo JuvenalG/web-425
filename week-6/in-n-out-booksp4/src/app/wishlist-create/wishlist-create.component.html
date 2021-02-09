@@ -1,0 +1,22 @@
+<!--
+ * Title: wishlist-create.component.html
+ * Author: Professor Krasso
+ * Date: 8 February 2021
+ * Modified By: Juvenal Gonzalez
+ * Description: hyperlink markup for wishlist-create component
+ -->
+
+
+ <form fxLayout="column" class="wishlist-create-form">
+  <mat-form-field fxFlex appearance="fill">
+    <mat-label>Title</mat-label>                   <!--NgModel captures values for form when calling add-item mehtod-->
+    <input type="text" name="title" matInput [(ngModel)]="item.title" />
+  </mat-form-field>
+
+  <mat-form-field fxFlex appearance="fill">
+    <mat-label>Authors</mat-label>
+    <input type="text" name="authors" matInput [(ngModel)]="item.authors" />
+  </mat-form-field>
+                                         <!--Click event calls addItem() method -->
+  <button mat-button color="primary" (click)="addItem()">Add item</button>
+</form>
