@@ -1,0 +1,18 @@
+/**
+ * Title: not-found.component.css
+ * Author: Professor Krasso
+ * Date: 8 February 2021
+ * Modified By: Juvenal Gonzalez
+ * Description: all css styling for the not-found component
+ */
+
+
+h2, p {
+  margin: 0 auto;
+
+  color: purple;
+  font-weight: 900;
+ padding-left: 50%;
+ padding-bottom: 20px;
+}
+

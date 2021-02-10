@@ -1,0 +1,12 @@
+/**
+ * Title: styles.css
+ * Author: Professor Krasso
+ * Date: 1 February 2021
+ * Modified By: Juvenal Gonzalez
+ * Description: css styling for HTML
+ */
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
