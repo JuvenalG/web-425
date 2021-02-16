@@ -1,0 +1,45 @@
+{
+    "Service": 
+[
+    {
+        "_id": 1,
+        "Service_name": "Password Reset",
+        "Service_Price": "39.99"
+    },
+    {
+        "_id": 2,
+        "Service_name": "Spyware Removal",
+        "Service_Price": "99.99"
+    },
+    {
+        "_id": 3,
+        "Service_name": "RAM UPgrade",
+        "Service_Price": "129.99"
+    },
+    {
+        "_id": 4,
+        "Service_name": "Software Installation",
+        "Service_Price": "49.99"
+    },
+    {
+        "_id": 5,
+        "Service_name": "Tune-Up",
+        "Service_Price": "89.99"
+    },
+    {
+        "_id": 6,
+        "Service_name": "Keyboard Cleaning",
+        "Service_Price": "45"
+    },
+    {
+        "_id": 7,
+        "Service_name": "Disk Clean-Up",
+        "Service_Price": "149.99"
+    },
+    {
+        "_id": 8,
+        "Service_name": "Labor",
+        "Service_Price": "50"
+    }
+]
+}

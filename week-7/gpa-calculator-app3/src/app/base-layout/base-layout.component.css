@@ -1,0 +1,18 @@
+/**
+ * Title: base-layout.component.css
+ * Author: Professor Krasso
+ * Date: 8 February 2021
+ * Modified By: Juvenal Gonzalez
+ * Description: all css styling for the base-layout component
+ */
+
+
+.logo {
+  margin-top: 5px;
+}
+
+.main-container {
+  padding-top: 25px;
+  width: 80%;
+  margin: 0 auto;
+}
