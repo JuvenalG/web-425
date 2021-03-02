@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-card-title class="blue">
+    {{ servicesPurchased[0].Service_name }}
+  </mat-card-title>
+  <br /><br />
+  <mat-card-content>
+    <div fxLayout="column" class="book-details">
+      <p>ISBN: {{ servicesPurchased[0].Service_price }}</p>
+    </div>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-raised-button color="accent" matDialogClose="confirm">OK</button>
+  </mat-card-actions>
+</mat-card>
